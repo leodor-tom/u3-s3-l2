@@ -10,6 +10,7 @@ import persistStore from "redux-persist/es/persistStore";
 const persistConfig = {
   key: "root",
   storage,
+  blacklist: [`jobs`],
   transforms: [
     encryptTransform({
       secretKey: process.env.REACT_APP_PERSIST_KEY,
