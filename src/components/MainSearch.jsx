@@ -47,7 +47,7 @@ const MainSearch = () => {
         </Col>
 
         {isLoading ? (
-          [...Array(6).keys()].map(num => (
+          [...Array(6).keys("$")].map(num => (
             <>
               <p aria-hidden="true">
                 <Placeholder xs={9} />
